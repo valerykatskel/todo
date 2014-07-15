@@ -22,8 +22,9 @@
 
 		<script type="text/template" id="item-template">
 			<div>
-				<input id="todo_complete" class="edit" type="checkbox" <%= completed ? 'checked="checked"' : ''%>>
-				<%- title %>
+				<input id="todo_complete" type="checkbox" <%= completed ? 'checked="checked"' : ''%>>
+				<%= title %>
+				<input class="edit" value="<%= title %>">
 			</div>
 		</script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
