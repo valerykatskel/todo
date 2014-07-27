@@ -20,7 +20,7 @@ app.AppView = Backbone.View.extend({
 		this.$footer = this.$('#footer');
 		this.$main = this.$('#main');
 		this.listenTo(app.Todos, 'add', this.addOne);
-		this.listenTo(app.Todos, 'reset', this.addOne);
+		this.listenTo(app.Todos, 'reset', this.addAll);
 
 	},
 
