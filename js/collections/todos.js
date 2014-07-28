@@ -20,7 +20,7 @@ var TodoList = Backbone.Collection.extend({
 		return this.filter(function(todo){
 			return todo.get('completed');
 		});
-	}
+	},
 
 	// Фильтрация незавершенных задач списка.
 	remaining: function(){
