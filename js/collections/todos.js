@@ -13,7 +13,7 @@ var TodoList = Backbone.Collection.extend({
 	// загрузила плагин локального хранилища в вашу страницу. В противном случае
 	// при тестировании кода в консоли закомментируйте
 	// следующую строку, чтобы н вызывать исключение.
-	localStorage: new Backbone.LocalStorage('todos-backbone'),
+	//localStorage: new Backbone.LocalStorage('todos-backbone'),
 
 	// Фильтрация завершенных задач списка.
 	completed: function(){

@@ -9,7 +9,7 @@ app.AppView = Backbone.View.extend({
 	el: '#todoapp',
 
 	// шаблон для строки статистики в нижней части приложения.
-	statsTemplate: _.template($('#stats-template').thml()),
+	statsTemplate: _.template($('#stats-template').html()),
 
 	// Новый код
 	// Делегированные события для создания новых задач и удаления завершенных.
