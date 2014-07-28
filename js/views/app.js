@@ -17,7 +17,7 @@ app.AppView = Backbone.View.extend({
 		'keypress #new-todo'		: 'createOnEnter',
 		'click #clear-completed'	: 'clearCompleted',
 		'click #toggle-all'			: 'toggleAllComplete'
-	}
+	},
 
 	// при инициализации мы делаем привязку
 	// к соответствующим событиям коллекции `Todos`
@@ -59,7 +59,7 @@ app.AppView = Backbone.View.extend({
 			this.$footer.hide();
 		}
 		this.allCheckbox.checked = !remaining;
-	}
+	},
 
 	// Добавление одной задачи в список путем создания представления для нее
 	// и добавления ее элемената в `<ul>`
