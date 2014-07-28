@@ -94,7 +94,7 @@ app.AppView = Backbone.View.extend({
 	// Создание новой задачи и ее сохранение
 	// в локальном хранилище при нажатии return
 	createOnEnter: function(event){
-		if(event.which !=== ENTER_KEY || !this.$input.val().trim()){
+		if(event.which !== ENTER_KEY || !this.$input.val().trim()){
 			return;
 		}
 		app.Todos.create(this.newAttributes());
